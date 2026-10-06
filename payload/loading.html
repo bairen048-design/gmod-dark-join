@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN" style="background:#161616;color-scheme:dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Connecting</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#161616!important;color:#aaa;font:16px Arial,"Microsoft YaHei",sans-serif}
+    body{background-image:none!important}
+    main{position:absolute;top:42%;left:10%;width:80%;text-align:center}
+    h1{font-size:22px;font-weight:normal;color:#bbb;margin:0 0 18px}
+    p{margin:8px 0;overflow-wrap:break-word;word-wrap:break-word}
+    #details{font-size:14px;color:#888}
+    #status{font-size:14px;color:#999}
+  </style>
+</head>
+<body bgcolor="#161616">
+  <main>
+    <h1 id="server">正在连接服务器</h1>
+    <p id="details"></p>
+    <p id="status">等待连接……</p>
+  </main>
+  <script>
+    // Keep the loading callbacks expected by Garry's Mod's menu Lua.
+    // Render server-provided strings as text, never as HTML.
+    (function () {
+      function text(id, value) {
+        document.getElementById(id).textContent = value == null ? '' : String(value);
+      }
+      window.GameDetails = function (servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language, gamemodeNice) {
+        text('server', servername || '正在连接服务器');
+        text('details', (mapname || '') + ((gamemodeNice || gamemode) ? ' · ' + (gamemodeNice || gamemode) : ''));
+      };
+      window.SetStatusChanged = function (status) { text('status', status); };
+      window.DownloadingFile = function (filename) { text('status', '正在下载：' + filename); };
+      window.SetFilesNeeded = function () {};
+      window.SetFilesTotal = function () {};
+    }());
+  </script>
+</body>
+</html>

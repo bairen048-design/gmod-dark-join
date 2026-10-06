@@ -1,0 +1,99 @@
+
+/* BEGIN GMOD_DARK_SERVER_LIST_V2 */
+.page.server_browser {
+    background: #161616 !important;
+    color: #bbb;
+    margin-right: 0 !important;
+    z-index: 0;
+}
+/* Cover the viewport behind the page, including its reserved footer area. */
+.page.server_browser::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #161616;
+    z-index: -1;
+    pointer-events: none;
+}
+/* The navigation bar lives outside the server page in the menu DOM. */
+#NavBar { background: #161616 !important; }
+#NavBar .button, #NavBar .button:hover {
+    background: #282828 !important;
+    box-shadow: none !important;
+    color: #bbb !important;
+}
+#NavBar .button span { color: #bbb !important; }
+#NavBar .button:hover { background: #35404a !important; }
+.server_browser .serverlist,
+.server_browser .serverinfo,
+.server_browser .server_gamemodes,
+.server_browser .server_gamemodes_inner,
+.server_browser .add_fav_server {
+    background-color: #191919 !important;
+    background-image: none !important;
+    border-color: #303030 !important;
+    color: #bbb !important;
+}
+.server_browser .serverlist .body,
+.server_browser .serverinfo players {
+    background-color: #1c1c1c !important;
+    color: #bbb !important;
+}
+.server_browser .serverlist .server {
+    background-color: #202020 !important;
+    color: #bbb !important;
+}
+.server_browser .serverlist .server:nth-child(odd) { background-color: #252525 !important; }
+.server_browser .serverlist .server:hover { background-color: #303a43 !important; }
+.server_browser .serverlist .server.activeserver,
+.server_browser .serverlist .server.activeserver:hover {
+    background-color: #304252 !important;
+    background-image: none !important;
+    color: #d0d0d0 !important;
+}
+.server_browser .serverlist .header,
+.server_browser .serverinfo button,
+.server_browser .serverinfo .closebtn,
+.server_browser .add_fav_server button,
+.server_browser a.bglink,
+.server_browser .installgamemode {
+    background-color: #304252 !important;
+    color: #c8c8c8 !important;
+    border-color: #394a58 !important;
+}
+.server_browser .serverinfo button { background-image: none !important; }
+.server_browser .serverinfo button:hover,
+.server_browser .add_fav_server button:hover,
+.server_browser a.bglink:hover { background-color: #394d60 !important; }
+.server_browser .serverinfo subinfo,
+.server_browser .gamemode .stats,
+.server_browser .serverlist .empty { color: #999 !important; }
+.server_browser .serverlist .missingmap map { color: #c58f8f !important; }
+.server_browser .serverlist .empty players { color: #b49a9a !important; }
+.server_browser .gamemode {
+    background: #242424 !important;
+    color: #bbb !important;
+}
+.server_browser .gamemode:hover { background: #303a43 !important; }
+.server_browser input,
+.server_browser select {
+    background-color: #242424 !important;
+    color: #bbb !important;
+    border-color: #444 !important;
+    box-shadow: none !important;
+}
+.server_browser input::-webkit-input-placeholder { color: #888 !important; }
+.server_browser .serverlist name tag,
+.server_browser .serverlist name tag.future { background: #493737 !important; color: #ccc !important; }
+.server_browser .flags_filter { background: #292929 !important; }
+.server_browser .flags_filter .flag { background: #383838 !important; }
+.server_browser .flags_filter .flag.prefer { background: #32563c !important; }
+.server_browser .flags_filter .flag.avoid { background: #593535 !important; }
+.server_browser ::-webkit-scrollbar { background: #1c1c1c !important; }
+.server_browser ::-webkit-scrollbar-track { background: #1c1c1c !important; }
+.server_browser ::-webkit-scrollbar-thumb { background: #444 !important; border-color: #1c1c1c !important; }
+.server_browser ::selection { background: #304252; color: #ccc; }
+/* END GMOD_DARK_SERVER_LIST_V2 */
