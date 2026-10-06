@@ -1,0 +1,22 @@
+{
+  "GMod_BG_Opaque": "30 30 30 255",
+  "Frame.BgColor": "30 30 30 255",
+  "Frame.OutOfFocusBgColor": "30 30 30 255",
+  "FrameTitleBar.BgColor": "30 30 30 255",
+  "FrameTitleBar.DisabledBgColor": "30 30 30 255",
+  "FrameTitleBar.TextColor": "185 185 185 255",
+  "FrameTitleBar.DisabledTextColor": "160 160 160 255",
+  "FrameTitleButton.BgColor": "30 30 30 255",
+  "FrameTitleButton.DisabledBgColor": "30 30 30 255",
+  "FrameTitleButton.FgColor": "170 170 170 255",
+  "FrameTitleButton.DisabledFgColor": "150 150 150 255",
+  "Label.TextColor": "185 185 185 255",
+  "Label.TextDullColor": "160 160 160 255",
+  "Button.TextColor": "185 185 185 255",
+  "Button.BgColor": "40 40 40 255",
+  "Button.ArmedTextColor": "195 195 195 255",
+  "Button.ArmedBgColor": "48 48 48 255",
+  "Button.DepressedTextColor": "195 195 195 255",
+  "Button.DepressedBgColor": "52 52 52 255",
+  "Button.FocusBorderColor": "72 72 72 255"
+}
